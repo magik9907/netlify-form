@@ -10,7 +10,7 @@ const NotFoundPage = (props) => (
   <Layout title="404">
     <main>
       <h3>Page not found: 404</h3>
-      <a href="https://magik9907.github.io">Wróć / back</a>
+      <Link to="/">Wróć / back</Link>
       <Social></Social>
     </main>
   </Layout>
