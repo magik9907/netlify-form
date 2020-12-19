@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import Social from "../components/social"
 import { useLanguageContext } from "../hooks/useLanguageContext"
+import { Link } from "gatsby"
 
 import './success.scss'
 
