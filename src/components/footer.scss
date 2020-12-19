@@ -1,0 +1,15 @@
+@import '../style/style.scss';
+
+footer {
+    display: none;
+    position: relative;
+    z-index: 10;
+    background-color: $bgc-add;
+    padding: 10px;
+
+    p {
+        @extend %font-paragraph;
+        text-align: center;
+        color: $font-bgc-main;
+    }
+}

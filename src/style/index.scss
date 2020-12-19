@@ -1,0 +1,153 @@
+@import './style';
+
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+a {
+    display: inline-block;
+    color: #000;
+    outline: none;
+    text-decoration: none;
+}
+
+iframe {
+    width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: normal;
+}
+
+body,
+html {
+    font-size: 16px;
+    line-height: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+li {
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    // overflow-x: hidden;
+    background-color: $bgc-add;
+}
+
+i {
+    color: $font-bgc-add;
+}
+
+.display-none {
+    display: none;
+}
+
+form {
+
+    textarea[required],
+    input[required] {
+        padding-right: 30px;
+        position: relative;
+
+        +span {
+            display: block;
+            width: 30px;
+            min-height: 50px;
+            position: relative;
+            background-color: $add-color;
+
+            &::after {
+                content: '!';
+                display: FLEX;
+                align-items: center;
+                z-index: 10;
+                position: absolute;
+                right: 0;
+                top: 0;
+                justify-content: center;
+                color: $font-bgc-main;
+                @include font-size(30px);
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    textarea[required] {
+        +span {
+            min-height: 150px;
+        }
+    }
+
+
+
+
+    [type="checkbox"],
+    [type="radio"] {
+        display: none;
+
+        +label {
+
+            span {
+                background-color: $font-bgc-main;
+                margin-right: 5px;
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                border: 2px solid $add-color;
+                vertical-align: text-bottom;
+            }
+        }
+
+        &:checked {
+            +label {
+
+                span {
+                    position: relative;
+
+                    &::after {
+                        content: '';
+                        background-color: $bgc-main;
+                        width: 21px;
+                        height: 21px;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        border-radius: 3px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 600px) {
+    form {
+        textarea[required] {
+            +span {
+                min-height: 250px;
+            }
+        }
+    }
+}
