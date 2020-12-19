@@ -17,7 +17,7 @@ const Success = () => {
         <Layout title={"Sukces"}>
             <main>
                 <h4>{messages[langContext.lang]}</h4>
-                <a href="https://magik9907.github.io">  Wróć / back  </a>
+                <Link to="/"></Link>
             </main>
             <Social />
         </Layout>
