@@ -1,7 +1,7 @@
 @import '../../style/style.scss';
 
 .contact {
-    
+
     color: $font-bgc-main;
     padding: 10px;
     @include font-size(1.2em);
@@ -185,6 +185,15 @@
         flex-direction: column;
         height: 100%;
 
+        label {
+            font-size: 1.2rem;
+        }
+
+        input,
+        textarea {
+            font-size: 1.2rem;
+        }
+
         form {
             width: 75vw;
         }
@@ -193,6 +202,21 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             column-gap: 20px;
+        }
+    }
+}
+
+@media screen and(min-width:1200px) {
+
+    .contact {
+
+        label {
+            font-size: 1.5rem;
+        }
+
+        input,
+        textarea {
+            font-size: 1.5rem;
         }
     }
 }

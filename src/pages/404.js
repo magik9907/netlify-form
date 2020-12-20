@@ -8,9 +8,9 @@ import { Link } from "gatsby"
 const NotFoundPage = (props) => (
 
   <Layout title="404">
-    <main>
+    <main className="e404">
       <h3>Page not found: 404</h3>
-      <Link to="/">Wróć / back</Link>
+      <Link to="/">Wróć / Back</Link>
       <Social></Social>
     </main>
   </Layout>

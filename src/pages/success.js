@@ -17,7 +17,7 @@ const Success = () => {
     return (
         <Layout title={"Sukces"}>
             <main>
-                <h4>{messages[langContext.lang]}</h4>
+                <h3>{messages[langContext.lang]}</h3>
                 <Link to="/">Wróć / back</Link>
             </main>
             <Social />
